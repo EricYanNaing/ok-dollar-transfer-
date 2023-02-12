@@ -1,0 +1,50 @@
+
+.fixTableHead {
+    overflow-y: auto;
+    height: 700px;
+  }
+  .fixTableHead thead th {
+    position: sticky;
+    top: 0;
+  }
+  table {
+    border-collapse: collapse;        
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 8px 15px;
+    border: 2px solid #0c0f3a;
+  }
+  th {
+    background: #f8f9fa;
+  }
+
+  .operator-index ul{
+    display:flex;
+
+}
+.operator-index ul li{
+    margin-right: 20px;
+
+}
+
+.dash-card{
+  border: 1px solid black;
+  padding-top: 20px;
+  color:#000000 ;
+  font-size: 18px;
+}
+
+.transfer-month h4{
+  color: #bb4380;
+}
+
+.transfer-month span{
+  font-size: small;
+}
+#datetimepicker-dash{
+  margin-left: 8px !important;
+}
+
+

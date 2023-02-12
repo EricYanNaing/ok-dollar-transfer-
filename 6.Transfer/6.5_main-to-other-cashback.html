@@ -1,0 +1,531 @@
+<!doctype html>
+<div class="loader-container" style="z-index: 2000">
+    <div class="lds-ripple"><div></div><div></div></div>
+</div>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="en" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>OK$ Transfer</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+          name="viewport" />
+    <meta content="This is an example dashboard created using build-in elements and components." name="description">
+    <meta content="no" name="msapplication-tap-highlight">
+
+    <!--    *** Multiselect Css ***-->
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.filter.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/4.1-jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!--    *** Bootstrap ***-->
+    <link href="../assets/vendor/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!--*** Check all ***-->
+    <!--    <link rel="stylesheet" href="../assets/vendor/multiselect-checkall/bootstrap-multiselect.css">-->
+
+    <!--    *** Calendar Css ***-->
+    <link rel="stylesheet" href="../assets/vendor/calendar/calentim.min.css">
+
+    <!--    *** Data Table ***-->
+    <link rel="stylesheet" href="../assets/vendor/data_table/data_table.css">
+
+    <!--*** 6.style css ***-->
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+
+<!--                *** Scroll Bar *** -->
+<div class="scrollbar-container"></div>
+<!--        *** Scroll Bar ***-->
+
+
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    <div class="app-header header-shadow">
+        <div class="app-header__logo">
+            <a href="../index.html" class="d-flex align-items-center text-decoration-none">
+                <div class="logo-src"></div>
+                <span class="fw-bolder logo-text text-white">OK$ Transfer</span>
+            </a>
+            <div class="header__pane ml-auto">
+                <div>
+                    <button id="closebtn" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="app-header__mobile-menu">
+            <div>
+                <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                </button>
+            </div>
+        </div>
+        <div class="app-header__menu">
+                <span>
+                    <button class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                            type="button">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+        </div>
+        <div class="app-header__content">
+            <div class="app-header-left">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input class="search-input" placeholder="Type to search" type="text">
+                        <button class="search-icon"><span></span></button>
+                    </div>
+                    <button class="close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-main">
+        <div class="app-sidebar sidebar-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar"
+                                type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                    <span>
+                        <button id="close-btn"
+                                class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                                type="button">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+            </div>
+            <div class="scrollbar-sidebar">
+                <div class="app-sidebar__inner">
+                    <div class="user-info">
+                        <div class=" d-flex flex-column align-items-center pt-3">
+                            <a href="../9.Profile/9_profile.html">
+                                <img src="../assets/images/profile-pic.jpg" alt="" class="profile-pic">
+                            </a>
+                            <a href="../9.Profile/9_profile.html" class="text-decoration-none">
+                                <p class="pt-2 fw-bold user-name" style="color:#c956b5;">OK$ TRANSFER ADMIN</p>
+                            </a>
+                            <p class=" fw-bold">Last Login</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>Wed, 01-Feb-2022</span>
+                            </div>
+                            <div class="">
+                                <i class="fa fa-clock"></i>
+                                <span>04:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="vertical-nav-menu pt-3F">
+                        <li class="py-1">
+                            <a href="../index.html" >
+                                <img src="../assets/images/icons/SideBar-Icon/Dashboard Gray.svg" alt="">
+                                <span class="px-2">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#">
+                                <img src="../assets/images/icons/SideBar-Icon/Master.svg" alt="">
+                                <span class="px-2">User Role Master</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.1_company.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Company.svg" alt="">
+                                        <span class="px-2">Company</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.4_department.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Department.svg" alt="">
+                                        <span class="px-2">Department</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.7_designation.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Designation.svg" alt="">
+                                        <span class="px-2">Designation</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1">
+                            <a href="../5.user_role/5.1_user_main-menu.html">
+                                <img src="../assets/images/icons/SideBar-Icon/user%20role%20permission%20grey.svg" alt="">
+                                <span class="px-2">User Role Permission</span>
+                            </a>
+                        </li>
+                        <li class="py-1 mm-active" >
+                            <a href="#" class="mm-active">
+                                <img src="../assets/images/icons/SideBar-Icon/Transfer 1.png" alt="">
+                                <span class="px-2">Transfer</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1" >
+                                    <a href="6.1.main-to-cashback-account-listing.html" >
+                                        <img src="../assets/images/icons/SideBar-Icon/Main%20To%20Cash%20icon%20Grey.svg" alt="">
+                                        <span class="px-2">Main To Cash Back Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="6.3.cashback-to-main_listing.html" >
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Main%20icon%20grey.svg" alt="">
+                                        <span class="px-2">Cash Back To Main Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="6.5_main-to-other-cashback.html" class="mm-active-1">
+                                        <img src="../assets/images/icons/SideBar-Icon/Main%20to%20Other%20Cash%20icon%20pansi.svg" alt="">
+                                        <span class="px-2">Main To Other Cash Back Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="6.7_cash-back-to-otherMain-listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Other%20Main%20Grey.svg" alt="">
+                                        <span class="px-2">Cash Back To Other Main Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="6.9_pay-to_listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Pay%20to%20icon%20gray.png" alt="">
+                                        <span class="px-2">Pay To</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1 ">
+                            <a class="">
+                                <img src="../assets/images/icons/SideBar-Icon/Report.svg" alt="">
+                                <span class="px-2">Report</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1">
+                                    <a href="../7.Report/7.cashback_report.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20Back%20Report%20icon%20Gray.svg" alt="">
+                                        <span class="px-2">Cash Back Report</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../7.Report/7.2.pay-to-report.html" >
+                                        <img src="../assets/images/icons/SideBar-Icon/Pay%20To%20report%20Icon%20Gray.svg" alt="">
+                                        <span class="px-2">Pay To Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1">
+                            <a href="../8.Change_pswrd/8.1_change_pswrd.html">
+                                <img src="../assets/images/icons/SideBar-Icon/change%20password%20gray.svg" alt="">
+                                <span class="px-2">Change Password</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" aria-expanded="false" data-toggle="modal" data-target="#logoutFormModal">
+                                <img src="../assets/images/icons/SideBar-Icon/log%20out%20gray.svg" alt="">
+                                <span class="px-2">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--            *** Content Start ***-->
+
+        <div class="app-main__outer">
+            <div class="app-main__inner">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="fw-bold user-role-title">Main To Other Cash Back Account Listing</h3>
+                    <div>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Filter"><img
+                                class="menu-icon pr-2 filter-btn" data-toggle="modal" data-target="#staticBackdrop"
+                                src="../assets/images/icons/SideBar-Icon/Filter%20pansi.png" alt=""></a>
+                        <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                class="menu-icon pr-2" src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png" alt=""></a>
+                        <a href="6.6_main-to-other-cashback-acc.html" data-bs-placement="bottom" data-toggle="tooltip"
+                           title="Transfer Main To Other Cash Back"><img class="menu-icon"
+                                                         src="../assets/images/icons/SideBar-Icon/add%20icon.png" alt="" style="width: 25px;"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive py-3 ">
+                            <table id="user-role-table" class="table table-responsive text-nowrap">
+                                <thead>
+                                <tr>
+                                    <th scope="col" style="width: 400px;">Advance Merchant Account Number</th>
+                                    <th scope="col" style="width: 200px;">Advance Merchant Account Name</th>
+                                    <th scope="col" style="width: 200px;">Transaction ID</th>
+                                    <th scope="col" style="width: 200px;">Other Cash Back Account Number</th>
+                                    <th scope="col" style="width: 200px;">Other Cash Back Account Name</th>
+                                    <th scope="col" style="width: 200px;">Transfer Amount</th>
+                                    <th scope="col" style="width: 400px;">Date & Time</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>+95 09421970987</td>
+                                    <td>U Aye</td>
+                                    <td>00005695242</td>
+                                    <td>+95 0942105692</td>
+                                    <td>U Aye</td>
+                                    <td>100,000</td>
+                                    <td>Mon, 08-Jan-2021 09:10:20</td>
+                                </tr>
+                                <tr>
+                                    <td>+95 09421970987</td>
+                                    <td>U Mya</td>
+                                    <td>00005695242</td>
+                                     <td>+95 0942105692</td>
+                                    <td>U Mya</td>
+                                    <td>100,000</td>
+                                    <td>Mon, 08-Jan-2021 09:10:20</td>
+                                </tr>
+                                <tr>
+                                    <td>+95 09421970987</td>
+                                    <td>Daw Hla</td>
+                                    <td>00005695242</td>
+                                     <td>+95 0942105692</td>
+                                    <td>U Aye</td>
+                                    <td>100,000</td>
+                                    <td>Mon, 08-Jan-2021 09:10:20</td>
+                                </tr>
+                                <tr>
+                                    <td>+95 09421970987</td>
+                                    <td>Daw Hla</td>
+                                    <td>00005695242</td>
+                                     <td>+95 0942105692</td>
+                                    <td>U Aye</td>
+                                    <td>100,000</td>
+                                    <td>Mon, 08-Jan-2021 09:10:20</td>
+                                </tr>
+                                <tr>
+                                    <td>+95 09421970987</td>
+                                    <td>U Htun</td>
+                                    <td>00005695242</td>
+                                     <td>+95 0942105692</td>
+                                    <td>U Htun</td>
+                                    <td>100,000</td>
+                                    <td>Mon, 08-Jan-2021 09:10:20</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--            *** Content End ***-->
+    </div>
+    <div class="modal fade .modal-lg " id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-3">
+                    <h3 class="modal-title" id="staticBackdropLabel">Filter</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-filter" aria-hidden="true"><img src="../assets/images/x.svg" alt="" style="width:20px"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body pt-3">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="date_time container mb-3 p-0">
+                                <p class="">Select Period Date</p>
+                                <i class="fa fa-calendar-alt calender-small"></i>
+                                <input type="text" id="datetimepicker" class="form-control bg-light" value=""
+                                       readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mrow">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="mb-5 ">
+                                <p class="">Advance Merchant Account Number</p>
+                                <select value="View" id="account-number" class="multiselect-role-permission"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="mb-5 ">
+                                <p class="">Advance Merchant Account Name</p>
+                                <select value="View" id="account-name" class="multiselect-role-permission"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                    <option>U Aye</option>
+                                    <option>Daw Mya</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="mb-5 ">
+                                <p class="">Transfer Amount</p>
+                                <select value="View" id="trasnferAmount" class="multiselect-role-permission"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                    <option>100.000</option>
+                                    <option>200.000</option>
+                                    <option>300.000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mrow">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="mb-5 ">
+                                <p class="">Other Cash Back Account Number</p>
+                                <select value="View" id="other-account-number" class="multiselect-role-permission"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                    <option>+95 09421097612</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="mb-5 ">
+                                <p class="">Other Cash Back Account Name</p>
+                                <select value="View" id="other-account-name" class="multiselect-role-permission"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                    <option>U Aye</option>
+                                    <option>Daw Mya</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger mr-5 reset-btn" data-dismiss="modal">Reset</button>
+                    <button type="button" class="btn btn-primary apply-btn">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal: logoutmodal-->
+<div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content logoutModalContent text-center modal-success">
+            <!--Body-->
+            <div class="modal-body">
+                <img src="../assets/images/Search.svg" width="10%" alt="">
+                <br><br><br>
+                <h4 style="font-weight: bold;">Do you want to logout?</h4>
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <a href="../1.Login_and_2.Forget/1.login.html"><button
+                            class="btn btn-success apply-btn mr-3">Yes</button></a>
+                    <button class="btn btn-danger ml-3 apply-btn" data-dismiss="modal">No</button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+</body>
+
+<!--***** Scripts *****-->
+
+<!--*** Jquery **-->
+<script src="../assets/scripts/jquery.min.js"></script>
+<script src="../assets/scripts/popper.js"></script>
+<script src="../assets/scripts/moment.min.js"></script>
+
+<!--*** Bootstrap ***    -->
+<script src="../assets/vendor/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+<!--*** Multiselect ***-->
+<script src="../assets/vendor/multiselect/assets/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.filter.js" type="text/javascript"></script>
+
+<!--*** Data Table ***-->
+<script src="../assets/vendor/data_table/jquery.dataTables.min.js"></script>
+<script src="../assets/vendor/data_table/dataTables.bootstrap4.min.js"></script>
+
+<!--*** Calendar ***-->
+<script src="../assets/vendor/calendar/calentim.min.js"></script>
+
+<!--*** Check all ***-->
+<!--    <script src="../assets/vendor/multiselect-checkall/bootstrap-multiselect.js"></script>-->
+
+<!--*** main JS ***-->
+<script src="../assets/scripts/main.js" type="text/javascript"></script>
+<script src="../assets/scripts/main-custom.js"></script>
+
+<script>
+    $("#trasnferAmount").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#account-name").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#account-number").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#other-account-name").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#other-account-number").multiselect().multiselectfilter({
+        label: false
+    });
+
+    $("#datetimepicker").calentim({
+        showFooter: false,
+        showTimePickers: false,
+        minDate: new Date(),
+        format: "ddd,DD-MMM-YYYY",
+        hourFormat: 24
+    });
+</script>
+
+<!--***** Scripts *****-->
+
+</html>

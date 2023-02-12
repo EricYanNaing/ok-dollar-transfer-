@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="en" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>OK$ Transfer</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+          name="viewport" />
+    <meta content="This is an example dashboard created using build-in elements and components." name="description">
+    <meta content="no" name="msapplication-tap-highlight">
+
+    <!--    *** Multiselect Css ***-->
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.filter.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!--    *** Bootstrap ***-->
+    <link href="../assets/vendor/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!--    *** Intl' Phone Css ***-->
+    <link rel="stylesheet" href="../assets/vendor/intl_phonenumber/css/intlTelInput.css">
+
+    <!--    *** Calendar Css ***-->
+    <link rel="stylesheet" href="../assets/vendor/calendar/calentim.min.css">
+
+    <!--    *** Data Table ***-->
+    <link rel="stylesheet" href="../assets/vendor/data_table/data_table.css">
+
+    <!--    *** Main Css ***-->
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+
+<!--                *** Scroll Bar *** -->
+<div class="scrollbar-container"></div>
+<!--        *** Scroll Bar ***-->
+
+
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    <div class="app-header header-shadow">
+        <div class="app-header__logo">
+            <a href="../index.html" class="d-flex align-items-center text-decoration-none">
+                <div class="logo-src"></div>
+                <span class="fw-bolder logo-text text-white">OK$ Transfer</span>
+            </a>
+            <div class="header__pane ml-auto">
+                <div>
+                    <button id="closebtn" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="app-header__mobile-menu">
+            <div>
+                <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                </button>
+            </div>
+        </div>
+        <div class="app-header__menu">
+                <span>
+                    <button class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                            type="button">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+        </div>
+    </div>
+    <div class="app-main">
+        <div class="app-sidebar sidebar-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar"
+                                type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                    <span>
+                        <button id="close-btn"
+                                class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                                type="button">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+            </div>
+            <div class="scrollbar-sidebar">
+                <div class="app-sidebar__inner">
+                    <div class="user-info">
+                        <div class=" d-flex flex-column align-items-center pt-3">
+                            <a href="../9.Profile/9_profile.html">
+                                <img src="../assets/images/profile-pic.jpg" alt="" class="profile-pic">
+                            </a>
+                            <a href="../9.Profile/9_profile.html" class="text-decoration-none">
+                                <p class="pt-2 fw-bold user-name" style="color:#c956b5;">OK$ TRANSFER ADMIN</p>
+                            </a>
+                            <p class=" fw-bold">Last Login</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>Wed, 01-Feb-2022</span>
+                            </div>
+                            <div class="">
+                                <i class="fa fa-clock"></i>
+                                <span>04:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="vertical-nav-menu pt-3F">
+                        <li class="py-1">
+                            <a href="../index.html">
+                                <img src="../assets/images/icons/SideBar-Icon/Dashboard%20Gray.svg" alt="">
+                                <span class="px-2">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#">
+                                <img src="../assets/images/icons/SideBar-Icon/Master.svg" alt="">
+                                <span class="px-2">User Role Master</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.1_company.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Company.svg" alt="">
+                                        <span class="px-2">Company</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.4_department.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Department.svg" alt="">
+                                        <span class="px-2">Department</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../4.user_role_master/4.7_designation.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Designation.svg" alt="">
+                                        <span class="px-2">Designation</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1">
+                            <a href="5.1_user_main-menu.html" class="mm-active">
+                                <img src="../assets/images/icons/SideBar-Icon/user%20role%20permission%20white.svg" alt="">
+                                <span class="px-2">User Role Permission</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#">
+                                <img src="../assets/images/icons/SideBar-Icon/Transfer%201.png" alt="">
+                                <span class="px-2">Transfer</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1">
+                                    <a href="../6.Transfer/6.1.main-to-cashback-account-listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Main%20To%20Cash%20icon%20Grey.svg" alt="">
+                                        <span class="px-2">Main To Cash Back Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../6.Transfer/6.3.cashback-to-main_listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Main%20icon%20grey.svg" alt="">
+                                        <span class="px-2">Cash Back To Main Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../6.Transfer/6.5_main-to-other-cashback.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Main%20to%20Other%20Cash%20icon%20Grey.svg" alt="">
+                                        <span class="px-2">Main To Other Cash Back Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../6.Transfer/6.7_cash-back-to-otherMain-listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Other%20Main%20Grey.svg" alt="">
+                                        <span class="px-2">Cash Back To Other Main Account</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../6.Transfer/6.9_pay-to_listing.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Pay%20To%20report%20Icon%20Gray.svg" alt="">
+                                        <span class="px-2">Pay To</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1 ">
+                            <a class="">
+                                <img src="../assets/images/icons/SideBar-Icon/Report.svg" alt="">
+                                <span class="px-2">Report</span>
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li class="py-1">
+                                    <a href="../7.Report/7.cashback_report.html">
+                                        <img src="../assets/images/icons/SideBar-Icon/Cash%20Back%20Report%20icon%20Gray.svg" alt="">
+                                        <span class="px-2">Cash Back Report</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="../7.Report/7.2.pay-to-report.html" >
+                                        <img src="../assets/images/icons/SideBar-Icon/Pay%20To%20report%20Icon%20Gray.svg" alt="">
+                                        <span class="px-2">Pay To Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-1">
+                            <a href="../8.Change_pswrd/8.1_change_pswrd.html">
+                                <img src="../assets/images/icons/SideBar-Icon/change%20password%20gray.svg" alt="">
+                                <span class="px-2">Change Password</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" aria-expanded="false" data-toggle="modal" data-target="#logoutFormModal">
+                                <img src="../assets/images/icons/SideBar-Icon/log%20out%20gray.svg" alt="">
+                                <span class="px-2">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--            *** Content Start ***-->
+
+        <div class="app-main__outer">
+            <div class="app-main__inner">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="fw-bold user-role-title">Create User Role Permission</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row py-2">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="mb-3 upload-profile">
+                                    <p class="">Upload Profile Image</p>
+                                    <input id="file-upload" class="form-control bg-light" type="file"
+                                           data-text="Select Your File" value="profile-img.png" accept="image/jpeg" />
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <a id="upload-lightbox" data-fslightbox="gallery"
+                                           href="#">
+                                            <img class="upload-photo-logo" src="../assets/images/upload.png"
+                                                 id="uploaded-photo" alt="">
+                                        </a>
+                                        <small class="text-danger" id="small-error">File Upload Jpg Format Maximum
+                                            Size 5 MB.</small>
+                                    </label>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Select Company Name</p>
+                                    <select id="company-name" class="multiselect-role-permission"
+                                            multiple="multiple" data-selected-text-format="count"
+                                            data-live-search="true">
+                                        <option>Consumer Goods Myanmar Limited</option>
+                                        <option>CGM Company Limited</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-5">
+                                    <p class="required">Select User Type</p>
+                                    <select value="View" id="user-type" class="multiselect-role-permission"
+                                            data-selected-text-format="count">
+                                        <option value="0">Admin</option>
+                                        <option value="0">User</option>
+                                    </select>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="">Description</p>
+                                    <input class="dpmnt-name form-control bg-light" type="text"
+                                           placeholder="Enter Description">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="mb-5">
+                                    <p class="required">User Name</p>
+                                    <input class="dpmnt-name form-control bg-light" type="text"
+                                           placeholder="Enter Username">
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Select Department</p>
+                                    <select value="View" id="department" class="multiselect-role-permission"
+                                            required multiple="multiple" data-selected-text-format="count"
+                                            data-live-search="true">
+                                        <option>Account Department</option>
+                                        <option >Admin Department</option>
+
+                                    </select>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Select Transaction</p>
+                                    <select value="View" id="transaction" class="multiselect-role-permission"
+                                            multiple="multiple" data-selected-text-format="count"
+                                            data-live-search="true">
+                                        <option>Dashboard</option>
+                                        <option>User Role Master</option>
+                                        <option>User Role Permission</option>
+                                        <option>Telecom Masters</option>
+                                        <option>Process</option>
+                                        <option>Report</option>
+                                        <option>Change Password</option>
+
+                                    </select>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Mobile Number</p>
+                                    <input type="text" id="phone" class="dpmnt-name form-control bg-light"
+                                           placeholder="09XXXXXXX" required="required">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                                <div class="mb-5">
+                                    <p class="required">Password</p>
+                                    <input class="dpmnt-name form-control bg-light" type="text"
+                                           placeholder="Enter Password">
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Select Designation</p>
+                                    <select value="View" id="designation" class="multiselect-role-permission"
+                                            multiple="multiple" data-selected-text-format="count"
+                                            data-live-search="true">
+                                        <option>Accountant</option>
+                                        <option>Manager</option>
+                                    </select>
+
+                                </div>
+                                <div class="mb-5">
+                                    <p class="required">Select Role Permission</p>
+                                    <select id="role-permission" class="multiselect-role-permission"
+                                            multiple="multiple" data-selected-text-format="count"
+                                            data-live-search="true">
+                                        <optgroup label="Dashboard">
+                                            <option>View</option>
+                                            <option>View & Download</option>
+                                            <option>Create & Upload</option>
+                                            <option>Updated</option>
+                                        </optgroup>
+                                        <optgroup label="User Role Permission">
+                                            <option>View</option>
+                                            <option>View & Download</option>
+                                            <option>Create & Upload</option>
+                                            <option>Updated</option>
+                                        </optgroup>
+                                        <optgroup label="Transfer">
+                                            <option>View</option>
+                                            <option>View & Download</option>
+                                            <option>Create & Upload</option>
+                                            <option>Updated</option>
+                                        </optgroup>
+                                        <optgroup label="Report">
+                                            <option>View</option>
+                                            <option>View & Download</option>
+                                            <option>Create & Upload</option>
+                                            <option>Updated</option>
+                                        </optgroup>
+                                        <optgroup label="Change Password">
+                                            <option>View</option>
+                                            <option>View & Download</option>
+                                            <option>Create & Upload</option>
+                                            <option>Updated</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-wrapper-footer">
+                <div class="app-footer">
+                    <div class="app-footer__inner justify-content-center">
+                        <div class=" create-user pb-3">
+                            <button type="button" class="btn btn-danger reset-btn mr-3" data-dismiss="modal"><a
+                                    href="5.1_user_main-menu.html"
+                                    class="text-decoration-none text-white">CANCEL</a></button>
+                            <button type="button" id="submit" class="btn btn-success save-btn" data-toggle="modal"
+                                    data-target="#accCreateModal"><a
+                                    class="text-decoration-none text-white">SAVE</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--            *** Content End ***-->
+</div>
+<!--Create Acc Success Modal -->
+<div class="modal fade accCreateModal" id="accCreateModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog  modal-dialog-centered   modal-lg" role="document">
+        <div class="modal-content deModalContent">
+            <div class="modal-body">
+                <br><br>
+                <div class="row">
+                    <img src="../assets/images/checked.png" class="rounded mx-auto d-block "
+                         style="width: 50px"><br>
+                </div>
+                <br>
+                <div class="row ">
+                    <div class="col-12">
+                        <h4 style="text-align: center;">User Created Successfully!</h4>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal: logoutmodal-->
+<div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content logoutModalContent text-center modal-success">
+            <!--Body-->
+            <div class="modal-body">
+                <img src="../assets/images/Search.svg" width="10%" alt="">
+                <br><br><br>
+                <h4 style="font-weight: bold;">Do you want to logout?</h4>
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <a href="../1.Login_and_2.Forget/1.login.html"><button
+                            class="btn btn-success apply-btn mr-3">Yes</button></a>
+                    <button class="btn btn-danger ml-3 apply-btn" data-dismiss="modal">No</button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+</body>
+
+<!--***** Scripts *****-->
+
+<!--*** Jquery **-->
+<script src="../assets/scripts/jquery.min.js"></script>
+<script src="../assets/scripts/popper.js"></script>
+<script src="../assets/scripts/moment.min.js"></script>
+
+<!--*** Bootstrap ***    -->
+<script src="../assets/vendor/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+<!--*** Multiselect ***-->
+<script src="../assets/vendor/multiselect/assets/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.filter.js" type="text/javascript"></script>
+
+<!--*** Data Table ***-->
+<script src="../assets/vendor/data_table/jquery.dataTables.min.js"></script>
+<script src="../assets/vendor/data_table/dataTables.bootstrap4.min.js"></script>
+
+<!--*** Calendar ***-->
+<script src="../assets/vendor/calendar/calentim.min.js"></script>
+
+<!--*** FsLightBox ***-->
+<script src="../assets/scripts/fslightbox.js"></script>
+
+<!--*** Intl' Phone ***-->
+<script src="../assets/vendor/intl_phonenumber/js/intlTelInput.js"></script>
+
+<!--*** main JS ***-->
+<script src="../assets/scripts/main.js" type="text/javascript"></script>
+<script src="../assets/scripts/main-custom.js"></script>
+
+<script>
+
+    // *** Upload Photo ***
+    let fileInput = document.getElementById('file-upload');
+    let span = document.querySelector('small');
+
+    fileInput.addEventListener('change', () => {
+        let files = fileInput.files;
+
+        if (files.length > 0) {
+            if (files[0].size > 5 * 1048576) {
+                span.innerText = 'Maximum Upload File Size Limit: 5MB.';
+                fileInput.value = '';
+                return false;
+            }
+        }
+
+        span.innerText = '';
+    });
+
+    $(function () {
+        $("#file-upload").change(function (event) {
+            let x = URL.createObjectURL(event.target.files[0]);
+            $("#uploaded-photo").attr("src", x);
+            $("#upload-lightbox").attr("href", x)
+            console.log(event);
+        })
+    })
+    // *** Upload Photo ***
+    // *** Intl' Phone ***
+
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        allowDropdown: false,
+        // autoHideDialCode: false,
+        autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        initialCountry: "mm",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        separateDialCode: true,
+        utilsScript: "build/js/utils.js",
+    });
+    // *** Intl' Phone ***
+
+    // *** Create Acc Success ***
+    $(function () {
+
+        $(document).ready(function () {
+            $('#submit').on("click", function () {
+                console.log("hello")
+                setTimeout(function () {
+                    window.location.replace("5.1_user_main-menu.html");
+                }, 3000)
+            })
+        })
+
+        setTimeout(function () {
+            $('#accCreateModal').modal('hide');
+
+        }, 5000);
+
+    });
+
+    // ***  Multiselect ***
+    $("#department").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#role-permission").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#designation").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#user-type").multiselect({
+        multiple: false,
+        header: false
+    });
+    $("#transaction").multiselect({
+        label: false
+    });
+    $("#company-name").multiselect({
+        label: false
+    });
+
+</script>
+
+<!--***** Scripts *****-->
+
+</html>

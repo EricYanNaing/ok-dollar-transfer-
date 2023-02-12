@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="en" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Transfer</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+        name="viewport" />
+    <meta content="This is an example dashboard created using build-in elements and components." name="description">
+    <meta content="no" name="msapplication-tap-highlight">
+
+    <!--    *** Multiselect Css ***-->
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/jquery.multiselect.filter.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/multiselect/assets/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!--    *** Bootstrap ***-->
+    <link href="../assets/vendor/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--    *** Calendar Css ***-->
+    <link rel="stylesheet" href="../assets/vendor/calendar/calentim.min.css">
+
+    <!--    *** Data Table ***-->
+    <link rel="stylesheet" href="../assets/vendor/data_table/data_table.css">
+
+
+
+<body>
+
+    <!--                *** Scroll Bar *** -->
+    <div class="scrollbar-container"></div>
+    <!--        *** Scroll Bar ***-->
+
+
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <a href="../index.html" class="d-flex align-items-center text-decoration-none">
+                    <div class="logo-src"></div>
+                    <span class="fw-bolder logo-text text-white">OK$ Transfer</span>
+                </a>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button id="closebtn" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                        type="button">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input class="search-input" placeholder="Type to search" type="text">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar"
+                                type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button class="hamburger hamburger--elastic mobile-toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button id="close-btn"
+                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+                            type="button">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <div class="user-info">
+                            <div class=" d-flex flex-column align-items-center pt-3">
+                                <a href="">
+                                    <img src="../assets/images/profile-pic.jpg" alt="" class="profile-pic">
+                                </a>
+                                <a href="" class="text-decoration-none">
+                                    <p class="pt-2 fw-bold user-name" style="color:#c956b5;">OK$ TRANSFER ADMIN</p>
+                                </a>
+                                <p class=" fw-bold">Last Login</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <i class="fa fa-calendar-alt"></i>
+                                    <span>Wed, 01-Feb-2022</span>
+                                </div>
+                                <div class="">
+                                    <i class="fa fa-clock"></i>
+                                    <span>04:50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="vertical-nav-menu pt-3F">
+                            <li class="py-1">
+                                <a href="#">
+                                    <img src="../assets/images/icons/SideBar-Icon/Dashboard%20Gray.svg" alt="">
+                                    <span class="px-2">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a href="">
+                                    <img src="../assets/images/icons/SideBar-Icon/Master.svg" alt="">
+                                    <span class="px-2">User Role Master</span>
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li class="py-1">
+                                        <a href="../4.user_role_master/4.1_company.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Company.svg" alt="">
+                                            <span class="px-2">Company</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../4.user_role_master/4.4_department.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Department.svg" alt="">
+                                            <span class="px-2">Department</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../4.user_role_master/4.7_designation.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Designation.svg" alt="">
+                                            <span class="px-2">Designation</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-1">
+                                <a href="../5.user_role/5.1_user_main-menu.html">
+                                    <img src="../assets/images/icons/SideBar-Icon/user role permission grey.svg" alt="">
+                                    <span class="px-2">User Role Permission</span>
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">
+                                    <img src="../assets/images/icons/SideBar-Icon/Transfer%201.png" alt="">
+                                    <span class="px-2">Transfer</span>
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li class="py-1">
+                                        <a href="../6.Transfer/6.1.main-to-cashback-account-listing.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Main%20To%20Cash%20icon%20Grey.svg" alt="">
+                                            <span class="px-2">Main To Cash Back Account</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../6.Transfer/6.3.cashback-to-main_listing.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Main%20icon%20grey.svg" alt="">
+                                            <span class="px-2">Cash Back To Main Account</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../6.Transfer/6.5_main-to-other-cashback.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Main%20to%20Other%20Cash%20icon%20Grey.svg" alt="">
+                                            <span class="px-2">Main To Other Cash Back Account</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../6.Transfer/6.7_cash-back-to-otherMain-listing.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Cash%20To%20Other%20Main%20Grey.svg" alt="">
+                                            <span class="px-2">Cash Back To Other Main Account</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../6.Transfer/6.9_pay-to_listing.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Pay%20To%20report%20Icon%20Gray.svg" alt="">
+                                            <span class="px-2">Pay To</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-1 mm-active">
+                                <a class="mm-active">
+                                    <img src="../assets/images/icons/SideBar-Icon/Report.svg" alt="">
+                                    <span class="px-2">Report</span>
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li class="py-1 ">
+                                        <a href="#" class="mm-active-1">
+                                            <img src="../assets/images/icons/SideBar-Icon/Cash%20Back%20Report%20icon%20Gray.svg"
+                                                alt="">
+                                            <span class="px-2">Cash Back Report</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="../7.Report/7.2.pay-to-report.html">
+                                            <img src="../assets/images/icons/SideBar-Icon/Pay%20To%20report%20Icon%20Gray.svg"
+                                                alt="">
+                                            <span class="px-2">Pay To Report</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-1">
+                                <a href="../8.Change_pswrd/8.1_change_pswrd.html">
+                                    <img src="../assets/images/icons/SideBar-Icon/change%20password%20gray.svg" alt="">
+                                    <span class="px-2">Change Password</span>
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a href="" aria-expanded="false" data-toggle="modal" data-target="#logoutFormModal">
+                                    <img src="../assets/images/icons/SideBar-Icon/log%20out%20gray.svg" alt="">
+                                    <span class="px-2">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--            *** Content Start ***-->
+
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold user-role-title">Cash Back Report</h3>
+                    </div>
+
+                    <div class="report">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                                <div class="date_time container mb-4 p-0">
+                                    <p class="">Select Period Date</p>
+                                    <i class="fa fa-calendar-alt calender-small"></i>
+                                    <input type="text" id="datetimepicker" class="form-control bg-light" value=""
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                                <div class="mb-4 ">
+                                    <p class="">Transaction Type</p>
+                                    <select value="View" id="transaction" class="multiselect-role-permission" onchange="transactionType()"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                        <option style="display: none;">Main To Cash Back Account</option>
+                                        <option >Cash Back To Main Account</option>
+                                        <option >Main To Other Cash Back Amount</option>
+                                        <option>Cash Back To Other Main Account</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                                <div class="mb-4 ">
+                                    <p class="">Transaction Created Form</p>
+                                    <select value="View" id="form" class="multiselect-role-permission" onchange="transactionType()"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                        <option>Mobile Phone</option>
+                                        <option>Web Panel</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                                <div class="mb-4 ">
+                                    <p class="">Summary</p>
+                                    <select value="View" id="summary" class="multiselect-role-permission" onchange="transactionType()"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                        <option>Date</option>
+                                        <option>Main OK$ Account Number</option>
+                                        <option>Cash Back OK$ Account Number</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                                <div class="mb-4 ">
+                                    <p class="">OK$ Account Number</p>
+                                    <select value="View" id="ok-number" class="multiselect-role-permission" onchange="transactionType()"
+                                        multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                        <option>+95 09421134567</option>
+                                        <option>+95 0975099876</option>
+                                        <option>+95 0987654321</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-center rowDisable" id="main2cashbackBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>                      
+                            <button type="button" onclick="main2cashbackAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="cashback2mainBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>              
+                            <button type="button" onclick="cashback2mainAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="main2otherBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>                        
+                            <button type="button" onclick="main2otherAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="cashback2otherBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>                         
+                            <button type="button" onclick="cashback2otherAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="allBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>   
+                            <button type="button" onclick="allAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="select2mainBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>   
+                            <button type="button" onclick="select2mainAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+                        <div class="d-flex justify-content-center rowDisable" id="select2cashBtn">
+                            <a href="">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn"
+                                data-dismiss="modal">Reset</button>
+                            </a>   
+                            <button type="button" onclick="select2cashAppear()" class="btn btn-primary apply-btn">Search</button>
+                        </div>
+
+
+                        <div class="row rowDisable" id="main2cashbackTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="report-table" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Number
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Name</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Level
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Address
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Operator
+                                                    Name</th>
+                                                <th scope="col" style="width: 500px;">Transfer Amount</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Main To Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>U Mya</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>
+                                                <td>10,000</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>00002157915</td>
+                                                <td>23-May-2021</td>
+                                                <td>Main To Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>U Mya</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>
+                                                <td>20,000</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="cashback2mainTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="report-table2" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Number
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Name</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Level
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Address
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Operator
+                                                    Name</th>
+                                                <th scope="col" style="width: 500px;">Transfer Amount</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Main To Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>U Mya</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>
+                                                <td>10,000</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>00002157915</td>
+                                                <td>23-May-2021</td>
+                                                <td>Main To Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>U Mya</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>
+                                                <td>20,000</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="main2otherTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="main2other" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Number
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Tranfer Amount
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Name
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Main To Other Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>0942198221</td>
+                                                <td>10,000</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Soe</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Main To Other Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>0942198221</td>
+                                                <td>10,000</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Soe</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="cashback2otherTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="cashback2other" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Tranfer Amount
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Name
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>0942979879</td>
+                                                <td>10,000</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Soe</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>0942018790</td>
+                                                <td>0942979879</td>
+                                                <td>10,000</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Soe</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="allTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="allT" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Number</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Tranfer Amount
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Name</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Level</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Address</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Name
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>09420186542</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>10,000</td> 
+                                                <td>U Mya</td>  
+                                                <td>Level 2</td>  
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>                                  
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Web Panel</td>
+                                                <td>-</td>
+                                                <td>09420186321</td>
+                                                <td>09448789729</td>
+                                                <td>20,000</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Hlaing Tsp</td>
+                                                <td>User 1</td>
+                                                <td>Tue, 10-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="select2mainTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="select2mainT" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Number</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Tranfer Amount
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Name</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Level</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Address</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>09420186542</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>10,000</td> 
+                                                <td>U Mya</td>  
+                                                <td>Level 2</td>  
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>                                  
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Web Panel</td>
+                                                <td>-</td>
+                                                <td>09420186321</td>
+                                                <td>09448789729</td>
+                                                <td>20,000</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Mya</td>
+                                                <td>User 1</td>
+                                                <td>Tue, 10-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row rowDisable" id="select2cashTable">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div>
+                                    <a href="" data-bs-placement="bottom" data-toggle="tooltip" title="Download"><img
+                                            class="menu-icon pr-2"
+                                            src="../assets/images/icons/SideBar-Icon/excel%20download%20pansi.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive py-3 ">
+                                    <table id="select2cashT" class="table table-responsive text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 100px;">Reference ID</th>
+                                                <th scope="col" style="width: 500px;">Date</th>
+                                                <th scope="col" style="width: 500px;">Transaction Type</th>
+                                                <th scope="col" style="width: 500px;">Transaction ID</th>
+                                                <th scope="col" style="width: 500px;">Transaction Created From</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Number</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Number</th>
+                                                <th scope="col" style="width: 500px;">Tranfer Amount
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Name</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Level</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Account Address</th>
+                                                <th scope="col" style="width: 500px;">Advance Merchant Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Name
+                                                </th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Account Type</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Business Categories</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Operator Name</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Level</th>
+                                                <th scope="col" style="width: 500px;">Cash Back OK$ Address</th>
+                                                <th scope="col" style="width: 500px;">Main OK$ Account Name</th>
+                                                <th scope="col" style="width: 500px;">User Name</th>
+                                                <th scope="col" style="width: 500px;">Date & Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Main To Cash Back Account</td>
+                                                <td>00005695241</td>
+                                                <td>Mobile Application</td>
+                                                <td>09420186542</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>10,000</td> 
+                                                <td>U Mya</td>  
+                                                <td>Level 2</td>  
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>MPT</td>                                  
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>User 1</td>
+                                                <td>Fri, 18-May-2021 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0000215835</td>
+                                                <td>18-May-2021</td>
+                                                <td>Cash Back To Other Main Account</td>
+                                                <td>00005695241</td>
+                                                <td>Web Panel</td>
+                                                <td>-</td>
+                                                <td>09420186321</td>
+                                                <td>09448789729</td>
+                                                <td>20,000</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>U Mya</td>
+                                                <td>Merchant</td>
+                                                <td>City Mart</td>
+                                                <td>Super Market</td>
+                                                <td>MPT</td>
+                                                <td>Level 2</td>
+                                                <td>No.(22), Dagon Tsp</td>
+                                                <td>Daw Mya</td>
+                                                <td>User 1</td>
+                                                <td>Tue, 10-May-2021 15:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="app-wrapper-footer">
+                <div class="app-footer">
+                    <div class="app-footer__inner">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            *** Content End ***-->
+    </div>
+
+</body>
+<!--Modal: logoutmodal-->
+<div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content logoutModalContent text-center modal-success">
+            <!--Body-->
+            <div class="modal-body">
+                <img src="../assets/images/Search.svg" width="10%" alt="">
+                <br><br><br>
+                <h4 style="font-weight: bold;">Do you want to logout?</h4>
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <a href="../1.Login_and_2.Forget/1.login.html"><button
+                            class="btn btn-success apply-btn mr-3">Yes</button></a>
+                    <button class="btn btn-danger ml-3 apply-btn" data-dismiss="modal">No</button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--***** Scripts *****-->
+
+<!--*** Jquery **-->
+<script src="../assets/scripts/jquery.min.js"></script>
+<script src="../assets/scripts/popper.js"></script>
+<script src="../assets/scripts/moment.min.js"></script>
+
+<!--*** Bootstrap ***    -->
+<script src="../assets/vendor/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+<!--*** Multiselect ***-->
+<script src="../assets/vendor/multiselect/assets/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.js" type="text/javascript"></script>
+<script src="../assets/vendor/multiselect/js/jquery.multiselect.filter.js" type="text/javascript"></script>
+
+<!--*** Data Table ***-->
+<script src="../assets/vendor/data_table/jquery.dataTables.min.js"></script>
+<script src="../assets/vendor/data_table/dataTables.bootstrap4.min.js"></script>
+
+<!--*** Calendar ***-->
+<script src="../assets/vendor/calendar/calentim.min.js"></script>
+
+<!--*** Check all ***-->
+<!--    <script src="../assets/vendor/multiselect-checkall/bootstrap-multiselect.js"></script>-->
+
+<!--*** main JS ***-->
+<script src="../assets/scripts/main.js" type="text/javascript"></script>
+<script src="../assets/scripts/main-custom.js"></script>
+<script src="../assets/vendor/chart_js/chart.min.js"></script>
+<script src="../assets/vendor/chart_js/horizonchart.js"></script>
+<script src="../assets/vendor/way_point/jquery.waypoints.js"></script>
+<script src="../assets/vendor/counter_up/counter_up.js"></script>
+
+<script>
+    $("#datetimepicker").calentim({
+        showFooter: false,
+        showTimePickers: false,
+        minDate: new Date(),
+        format: "ddd,DD-MMM-YYYY",
+        hourFormat: 24
+    });
+
+    $("#transaction").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#summary").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#form").multiselect().multiselectfilter({
+        label: false
+    });
+    $("#ok-number").multiselect().multiselectfilter({
+        label: false
+    });
+   
+
+    (function ($) {
+
+        $.extend(true, $.fn.dataTable.defaults.oLanguage.oPaginate, {
+            sNext: '<i class="fa fa-chevron-right text-dark" style="font-size: 18px"></i>',
+            sPrevious: '<i class="fa fa-chevron-left text-dark" style="font-size: 18px"></i>'
+        });
+        $("#report-table").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+
+        $("#report-table2").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        $("#cashback2other").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        $("#main2other").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        $("#allT").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        $("#select2mainT").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        $("#select2cashT").DataTable({
+            "dom": '<"top">rt<"bottom"lip><"clear">',
+            "ordering": false,
+            "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0, 1, 2, 3]
+                },
+                {
+                    "bSearchable": false,
+                    "aTargets": [0, 1, 2, 3]
+                }
+            ]
+        });
+        
+    })(jQuery);
+
+    function transactionType(){
+        var summary = document.getElementById('summary').value;
+        var form = document.getElementById('form').value;
+        var okNum = document.getElementById('ok-number').value;
+        var transaction = document.getElementById("transaction");
+        var transactionArr = Array.from(transaction.selectedOptions).map(option => option.index+1);
+
+        console.log(summary);
+            console.log(form);
+            console.log(okNum);
+            console.log(transactionArr);
+
+        if (transactionArr == 0 && form != '' && summary != '' && okNum != '') {
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+            
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('cashback2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+            console.log(0);
+        }
+        else if (transactionArr == 1  && form != '' && summary != '' && okNum != ''){
+            document.getElementById('main2cashbackBtn').classList.remove('rowDisable');
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('cashback2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+
+            console.log('1');
+        } 
+        else if (transactionArr == 2 && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.remove('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('cashback2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+            console.log('2');
+        }
+        else if (transactionArr == 3 && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.remove('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('cashback2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+            console.log('3');
+        }
+        else if (transactionArr == 4 && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.remove('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+            console.log('4');
+        }
+        else if (transactionArr.length == 4 && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.remove('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+
+            console.log('all');
+        }
+        else if (transactionArr.length == 3 && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.remove('rowDisable');
+            document.getElementById('select2mainBtn').classList.add('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+            console.log('3');
+        }
+        else if (transactionArr == 1,3  && form != '' && summary != '' && okNum != ''){
+            document.getElementById('cashback2mainBtn').classList.add('rowDisable');
+            document.getElementById('main2cashbackBtn').classList.add('rowDisable');
+            document.getElementById('main2otherBtn').classList.add('rowDisable');
+            document.getElementById('cashback2otherBtn').classList.add('rowDisable');
+            document.getElementById('allBtn').classList.add('rowDisable');
+            document.getElementById('select2cashBtn').classList.add('rowDisable');
+            document.getElementById('select2mainBtn').classList.remove('rowDisable');
+
+            document.getElementById('main2cashbackTable').classList.add('rowDisable');
+            document.getElementById('cashback2mainTable').classList.add('rowDisable');
+            document.getElementById('main2otherTable').classList.add('rowDisable');
+            document.getElementById('select2cashTable').classList.add('rowDisable');
+            document.getElementById('select2mainTable').classList.add('rowDisable');
+            document.getElementById('allTable').classList.add('rowDisable');
+
+            console.log('1,3');
+        }
+          
+    }
+
+    function main2cashbackAppear(){
+        document.getElementById('main2cashbackTable').classList.remove('rowDisable');
+    }
+
+    function cashback2mainAppear(){
+        document.getElementById('cashback2mainTable').classList.remove('rowDisable');
+    }
+
+    function main2otherAppear(){
+        document.getElementById('main2otherTable').classList.remove('rowDisable');
+    }
+
+    function cashback2otherAppear(){
+        document.getElementById('cashback2otherTable').classList.remove('rowDisable');
+    }
+
+    function allAppear(){
+        document.getElementById('allTable').classList.remove('rowDisable');
+    }
+
+    function select2mainAppear(){
+        document.getElementById('select2mainTable').classList.remove('rowDisable');
+    }
+
+    function select2cashAppear(){
+        document.getElementById('select2cashTable').classList.remove('rowDisable');
+    }
+</script>
+
+<!--***** Scripts *****-->
+
+</html>
